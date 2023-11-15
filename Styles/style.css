@@ -1,0 +1,47 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar Styling */
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    display: none; /* initially hide on smaller screens */
+  }
+  
+  #navbar header {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .nav-link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  /* Main Document Styling */
+  #main-doc {
+    margin-left: 220px; /* to give space for the navbar */
+    padding: 20px;
+  }
+  
+  .main-section {
+    margin-bottom: 40px;
+  }
+  
+  /* Media Query for larger screens */
+  @media (min-width: 768px) {
+    #navbar {
+      display: block;
+    }
+  }  

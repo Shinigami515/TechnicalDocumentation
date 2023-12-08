@@ -1,67 +1,344 @@
-@media (prefers-reduced-motion: no-preference) {
-  * {
-    scroll-behavior: smooth;
+*::selection {
+  background-color: goldenrod;
+  color: black;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #191825;
+  scroll-behavior: smooth;
+}
+
+/**Headers**/
+header {
+  color: #865DFF;
+  font-weight: 700;
+  font-size: 28.8px;
+  padding-bottom: 10px;
+}
+
+/**All common classes**/
+.Paragraph {
+  margin-left: 10px;
+  padding: 2px;
+  font-size: 17.36px;
+  font-weight: 500;
+  color: #E384FF;
+}
+
+.UlLi {
+  margin-left: 25px;
+  color: #fff;
+  padding: 8px;
+}
+
+.UlLiLi {
+  margin-left: 50px;
+  color: #fff;
+  padding: 3px;
+  list-style: circle;
+}
+
+.Code {
+  margin-left: 20px;
+  background-color: #FFA3FD;
+  font-weight: 900;
+  color: black;
+}
+
+.Referencea {
+  color: goldenrod;
+}
+
+
+/**Sections**/
+
+.main-section {
+  margin: 25px;
+}
+
+
+/**Navbar**/
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 22%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #191825;
+  margin-left: 0px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  padding: 8px;
+  margin-left: 20px;
+  color: goldenrod;
+}
+
+.navbar-header {
+  margin-left: 15px;
+  font-size: 34px;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+/**Main-doc**/
+#main-doc {
+  position: absolute;
+  margin-left: 300px;
+  padding: 40px;
+}
+
+
+/**Media Query**/
+@media screen and (max-width: 1075px) {
+  #main-doc {
+      margin-left: 200px;
+  }
+
+  .nav-link {
+      font-size: 18px;
+      padding: 6px;
+      margin-left: 15px;
+  }
+
+  .navbar-header {
+      font-size: 28px;
+      margin-top: 40px;
   }
 }
 
-body{
-  background-color: #fffff0;
-  font-family: Times New Roman;
-  margin: 0;
+
+@media screen and (max-width: 1021px) and (min-width: 969px) {
+  #main-doc {
+      margin-left: 180px;
+  }
+
+  .nav-link {
+      font-size: 18px;
+      padding: 6px;
+      margin-left: 10px;
+  }
+
+  .navbar-header {
+      font-size: 28px;
+      margin-top: 40px;
+  }
 }
 
-#navbar{
-  position: fixed;
-  text-align: center;
-  display: block;
-  border-right: 1.5px black solid;
-  width: 25%;
-  height: 100%;
-  padding: 20px 30px;
-  overflow: hidden;
-  float: left;
+@media screen and (max-width: 970px) {
+  #main-doc {
+      margin-left: 180px;
+  }
+
+  .nav-link {
+      font-size: 18px;
+      padding: 6px;
+      margin-left: 15px;
+  }
+
+  .navbar-header {
+      font-size: 28px;
+      margin-top: 40px;
+  }
 }
 
-nav header h1{
-  font-weight: 500;
-  margin: 1.5em 1em; 
-  font-size: 30px;
+@media screen and (max-width: 915px) {
+  #main-doc {
+      margin-left: 160px;
+  }
+
+  .nav-link {
+      font-size: 18px;
+      padding: 6px;
+      margin-left: 15px;
+  }
+
+  .navbar-header {
+      font-size: 28px;
+      margin-top: 40px;
+  }
 }
 
-a, nav ul li{
-  text-decoration: none;
-  list-style: none;
-  color: inherit;
-  text-align: left;
-  font-size: 20px;
-  margin: 2em 0em;
+@media screen and (max-width: 839px) {
+  #main-doc {
+      margin-left: 140px;
+  }
+
+  .nav-link {
+      font-size: 16px;
+      padding: 6px;
+      margin-left: 10px;
+  }
+
+  .navbar-header {
+      font-size: 24px;
+      margin-top: 40px;
+  }
 }
 
-nav > ul > li:hover {
-  background-color: #dfdfe2;
-  color: #1b1b32;
-  cursor: pointer;
+@media screen and (max-width: 771px) and (min-width: 660px) {
+  #main-doc {
+      margin-left: 120px;
+  }
+
+  .nav-link {
+      font-size: 16px;
+      padding: 6px;
+      margin-left: 10px;
+  }
+
+  .navbar-header {
+      font-size: 24px;
+      margin-top: 40px;
+  }
 }
 
-main{
-  position: absolute;
-  left: 35%;
-  padding: 0.5em;
-  overflow: hidden;
+@media screen and (max-width: 661px) {
+  #main-doc {
+      margin-left: 100px;
+  }
+
+  .nav-link {
+      font-size: 16px;
+      padding: 5.5px;
+      margin-left: 10px;
+  }
+
+  .navbar-header {
+      font-size: 24px;
+      margin-top: 40px;
+  }
 }
 
-section p, section li{
-  margin-left: 1.5em 
+@media screen and (max-width: 613px) {
+  .nav-link {
+      font-size: 16px;
+      padding: 5px;
+      margin-left: 10px;
+  }
+
+  .navbar-header {
+      font-size: 23px;
+      margin-top: 40px;
+      margin-left: 6px;
+  }
 }
 
-.Code{
-  margin: 1em 2em;
-  background-color: #e2dccd;
-  padding: 10px;
-  height: 1.5em;
-  font-size: 1em;
+@media screen and (max-width: 557px) {
+  #main-doc {
+      margin-left: 80px;
+  }
+
+  .nav-link {
+      font-size: 15.5px;
+      padding: 6px;
+      margin-left: 8px;
+  }
+
+  .navbar-header {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-left: 5px;
+  }
 }
 
-.main-section{
-  margin-bottom: 2.5em;
+@media screen and (max-width: 487px) {
+  .navbar-header {
+      font-size: 19px;
+      margin-top: 30px;
+      margin-left: 4px;
+  }
+}
+
+@media screen and (max-width: 467px) and (min-width: 424px) {
+  #main-doc {
+      margin-left: 60px;
+  }
+
+  .nav-link {
+      font-size: 13px;
+      padding: 5px;
+      margin-left: 8px;
+  }
+
+  .navbar-header {
+      font-size: 18px;
+      margin-top: 30px;
+      margin-left: 3px;
+  }
+}
+
+@media screen and (max-width: 423px) {
+  #main-doc {
+      margin-left: 40px;
+      text-align: justify;
+  }
+
+  .nav-link {
+      font-size: 12px;
+      padding: 5px;
+      margin-left: 5px;
+  }
+
+  .navbar-header {
+      font-size: 18px;
+      margin-top: 30px;
+      margin-left: 3px;
+  }
+}
+
+@media screen and (max-width: 420px) and (min-width: 388px) {
+  #main-doc {
+      margin-left: 40px;
+      text-align: justify;
+  }
+
+  .nav-link {
+      font-size: 12px;
+      padding: 4px;
+      margin-left: 5px;
+  }
+
+  .navbar-header {
+      font-size: 16.5px;
+      margin-top: 30px;
+      margin-left: 3px;
+  }
+}
+
+@media screen and (max-width: 387px) and (min-width: 300px) {
+  #main-doc {
+      margin-left: 40px;
+      text-align: justify;
+  }
+
+  .nav-link {
+      font-size: 12px;
+      padding: 4px;
+      margin-left: 5px;
+  }
+
+  .navbar-header {
+      font-size: 14px;
+      margin-top: 30px;
+      margin-left: 3px;
+  }
 }

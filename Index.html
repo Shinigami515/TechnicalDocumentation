@@ -1,145 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>CSS Documentation</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1, viewport-fit=cover">
-    <link rel="stylesheet" href="Styles/style.css" media="screen" />
-</head>
-
-<body>
-    <nav id="navbar">
-        <header>CSS Documentation</header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoyoverse</title>
+    <link rel="stylesheet" href="Styles/style.css">
+  </head>
+  <body>
+      <nav id="navbar">
+        <header>
+          <h1>Hoyoverse</h1>
+        </header>
         <ul>
-            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-            <li><a class="nav-link" href="#CSS_basics">CSS basics</a></li>
-            <li><a class="nav-link" href="#Anatomy_of_CSS_ruleset">Anatomy of CSS ruleset</a></li>
-            <li><a class="nav-link" href="#Selecting_multiple_elements">Selecting multiple elements</a></li>
-            <li><a class="nav-link" href="#Different_type_of_selectors">Different type of selectors</a></li>
-            <li><a class="nav-link" href="#CSS_box_model">CSS Box model</a></li>
-            <li><a class="nav-link" href="#Reference">Reference</a></li>
+          <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#What_you_should_know">What you should know</a></li>
+          <li><a class="nav-link" href="#History">History</a></li>
+          <li><a class="nav-link" href="#Games_of_hoyoverse">Games of Hoyoverse</a></li>
         </ul>
-    </nav>
+      </nav>
     <main id="main-doc">
-       <section class="main-section" id="Introduction">
-            <header>Introduction</header>
-            <p>Cascadeing Style Sheets(CSS)is a stylesheet language used to describe the presentation of a
-                document written in HTML or XML.CSS describes how elements should be rendered on screen, on
-                paper,in speech, or on other media.
-            </p>
-            <p>CSS is amount the core language of the open web and is standardized across Web browsers according
-                to W3C specifications.Previously the development of various parts of CSS specifications was done
-                synchronouly, which allowed the versioning of the latest recommendations.
-            </p>
-       </section>
-       <section class="main-section" id="CSS_basics">
-            <header>CSS basics</header>
-            <p>CSS(Cascadeing Style Sheets) is the code that styles web content.</p>
-            <h3>What is CSS?</h3>
-            <p>Like HTML,CSS is not a programming language.It's not a markup language either. CSS is a style sheet
-                language.CSS is what you use to selectively style HTML elements.For example,this CSS selects paragraph
-                text, setting the color to green:
-            </p>
-            <code>
-                p{
-                    color:green;
-                }
-            </code>
-       </section>
-       <section class="main-section" id="Anatomy_of_CSS_ruleset">
-            <header>Anatomy of CSS ruleset</header>
-            <p>Let's dissect the CSS code for green paragraph text to understand how it works:</p>
+      <section class="main-section" id="Introduction">
+        <header>
+          <h1>Introduction</h1>
+        </header>
+          <p>Today, we are excited to announce the official launch of our all-new, forward-thinking brand, HoYoverse. 
+            The brand aims to create and deliver an immersive virtual world experience to players worldwide through a variety of entertainment services. </p>
+          <p>Since day one, our primary goal in content creation has been to provide our players all over the globe with something extraordinary, fresh, and intriguing. 
+          </p>
+      </section>
+      <section class="main-section" id="What_you_should_know">
+        <header>
+          <h1>What you should know</h1>
+        </header>
+          <p>This guide assumes you have the following basic background:
             <ul>
-                <li>p is the Selector</li>
-                <li>color is the Property</li>
-                <li>gree is the Property Value</li>
+              <li>The company is the creator of the Honkai series, which consists of several games, including Honkai Impact 3rd and Honkai: Star Rail. </li>
+              <li>HoYoverse also developed Tears of Themis, a free-to-play adventure game. 
+                Another game that they have developed is Genshin Impact, an open-world action role-playing game, which is one of the highest-grossing mobile games of 2021.</li>
             </ul>
-            <h3>Selector</h3>
-            <p>This is the HTML element name at the start of the ruleset. It defines the elements to be
-                style.To style a diffrent element,change the selector.
-            </p>
-            <h3>Declaration</h3>
-            <p>This is a single rule like color:green;. Itspecifies which of the elements properties
-                you want to style.
-            </p>
-            <h3>Properties</h3>
-            <p>These are ways in which you can style an HTML element.In CSS you chose which propertis you 
-                want to affect in the rule.
-            </p>
-            <h3>Property Value</h3>
-            <p>To the right of the property after the colon there is the property value.This choose one
-                out of many possible apperances for a giver property.
-            </p>
-       </section>
-       <section class="main-section" id="Selecting_multiple_elements">
-            <header>Selecting multiple elements</header>
-            <p>You can also select multiple elements and apply a single ruleset to all of them. Seperate 
-                multiple selectors by commas. For example:
-            </p>
-            <code>
-                p, li,h1,{
-                    color:lightgreen;
-                }
-            </code>
-       </section>
-       <section class="main-section" id="Different_type_of_selectors">
-            <header>Different type of selectors</header>
-            <p>There are many diffrent types of selectors. The examples above use elements selectors,
-                which select all elements of a given type.But we can make more specific selection as well.
-                Here are some of the most common types of selectors.
-            </p>
-            <ul>
-                <li>Element Selector</li>
-                <li>ID selector</li>
-                <li>Class selector</li>
-                <li>Attribute selecto</li>
-                <li>Pseudo-class-selector</li>
-            </ul>
-            <code>
-                p{
-                    color:blue;
-                }
-            </code>
-            <code>
-                #description{
-                    color:orange;
-                }
-            </code>
-            <code>
-                .description{
-                    color:red;
-                }
-            </code>
-            <code>
-                a:hover{
-                    color:yellow;
-                }
-            </code>
-       </section>
-       <section class="main-section" id="CSS_box_model">
-            <header>CSS box model</header>
-            <p>CSS layouts is mostly based on the box model.Each box taking up space on your page has
-                properties like:
-            </p>
-            <ul>
-                <li>padding, the space around the content.</li>
-                <li>border, the solid linethat is just outside the padding</li>
-                <li>margin, the space around the outside of the border.</li>
-            </ul>
-
-            <code>
-                p{
-                    padding:2px;
-                    border:3px solid red;
-                    margin:5px;
-                }
-            </code>
-       </section>
-       
-       <section class="main-section" id="Reference">
-            <header>Reference</header>
-            <p>Find more about CSS here <a href="#" class="reference-link">MND</a></p>  
-       </section>
+          </p>
+      </section>
+      <section class="main-section" id="History">
+        <header>
+          <h1>History</h1>
+        </header>
+          <p>HoYoverse began with three computer science students from Shanghai Jiao Tong University who shared an interest in technology and ACG (anime, comics, and games) culture: Cai "Hugh" Haoyu, Liu "Forrest" Wei, and Luo Yuhao </p>
+          <p>Before establishing the miHoYo name, the three have worked on projects together. Their first project was an open-source literature community which won them scholarships worth CNY 200,000 at a competition. </p>
+          <p>In 2010, the team developed an isometric tile-based game engine called the "Misato Engine" or "Misato2D" using Adobe Flash Player. 
+            Katsuragi Misato, a character from the Japanese franchise Neon Genesis Evangelion, inspired the name. 
+            Using an upgraded version of the engine, they developed a game called Legend of Saha for a Flash game development competition held during the second China Game Developers Conference (CGDC) in July of that year. 
+            The team won a cash prize of CNY 30,000 provided by Shanda Games. Shanda Games later outsourced them to develop a mini-game called Bubble Hero </p>
+      </section>
+      <section class="main-section" id="Games_of_hoyoverse">
+        <header>
+          <h1>Games of Hoyoverse</h1>
+        </header>
+          <p>The Games made by Hoyoverse are:</p>
+          <p>Genshin Imacpt</p>
+          <p>Honkai Impact 3rd</p>
+          <p>Honkai:Star Rail</p>
+          <p>Tears Of Themis</p>
+          <p>Zenless Zone Zero</p>
+          <p>Houkai Gakuen</p>
+          <p>Gun Girl Z</p>
+        </section>
     </main>
-</body>
+  </body>
 </html>

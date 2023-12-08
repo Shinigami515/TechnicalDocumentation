@@ -15,7 +15,14 @@ body {
 
 /**Headers**/
 header {
-  color: #865DFF;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #cc0000;
+  color: white;
+  font-family: sans-serif;
+  padding: 1em;
   font-weight: 700;
   font-size: 28.8px;
   padding-bottom: 10px;
@@ -61,21 +68,19 @@ header {
   margin: 25px;
 }
 
-
-/**Navbar**/
-#navbar {
+#nav-bar {
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
   width: 22%;
   height: 100%;
   overflow-y: auto;
   background-color: #191825;
-  margin-left: 0px;
   text-align: left;
   margin: 0;
   padding: 0;
 }
+
 
 .nav-link {
   text-decoration: none;
@@ -86,7 +91,7 @@ header {
   color: goldenrod;
 }
 
-.navbar-header {
+.nav-bar-header {
   margin-left: 15px;
   font-size: 34px;
   color: #fff;
@@ -137,7 +142,7 @@ header {
       margin-left: 10px;
   }
 
-  .navbar-header {
+  .nav-bar-header {
       font-size: 28px;
       margin-top: 40px;
   }
@@ -154,7 +159,7 @@ header {
       margin-left: 15px;
   }
 
-  .navbar-header {
+  .nav-bar-header {
       font-size: 28px;
       margin-top: 40px;
   }
@@ -171,7 +176,7 @@ header {
       margin-left: 15px;
   }
 
-  .navbar-header {
+  .nav-bar-header {
       font-size: 28px;
       margin-top: 40px;
   }
@@ -188,7 +193,7 @@ header {
       margin-left: 10px;
   }
 
-  .navbar-header {
+  .nav-bar-header {
       font-size: 24px;
       margin-top: 40px;
   }
@@ -205,7 +210,7 @@ header {
       margin-left: 10px;
   }
 
-  .navbar-header {
+  .nav-bar-header {
       font-size: 24px;
       margin-top: 40px;
   }
@@ -222,7 +227,7 @@ header {
       margin-left: 10px;
   }
 
-  .navbar-header {
+  .nav-bar-header {
       font-size: 24px;
       margin-top: 40px;
   }
@@ -235,7 +240,7 @@ header {
       margin-left: 10px;
   }
 
-  .navbar-header {
+  .nav-bar-header {
       font-size: 23px;
       margin-top: 40px;
       margin-left: 6px;
@@ -253,7 +258,7 @@ header {
       margin-left: 8px;
   }
 
-  .navbar-header {
+  .nav-bar-header {
       font-size: 20px;
       margin-top: 30px;
       margin-left: 5px;
@@ -261,7 +266,7 @@ header {
 }
 
 @media screen and (max-width: 487px) {
-  .navbar-header {
+  .nav-bar-header {
       font-size: 19px;
       margin-top: 30px;
       margin-left: 4px;
@@ -279,7 +284,7 @@ header {
       margin-left: 8px;
   }
 
-  .navbar-header {
+  .nav-bar-header {
       font-size: 18px;
       margin-top: 30px;
       margin-left: 3px;
@@ -298,7 +303,7 @@ header {
       margin-left: 5px;
   }
 
-  .navbar-header {
+  .nav-bar-header {
       font-size: 18px;
       margin-top: 30px;
       margin-left: 3px;
@@ -317,7 +322,7 @@ header {
       margin-left: 5px;
   }
 
-  .navbar-header {
+  .nav-bar-header {
       font-size: 16.5px;
       margin-top: 30px;
       margin-left: 3px;
@@ -336,9 +341,21 @@ header {
       margin-left: 5px;
   }
 
-  .navbar-header {
+  .nav-bar-header {
       font-size: 14px;
       margin-top: 30px;
       margin-left: 3px;
   }
 }
+
+.flex-item {
+  color: white;
+  padding: 10px;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+    }

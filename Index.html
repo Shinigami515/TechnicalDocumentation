@@ -8,14 +8,19 @@
 </head>
 
 <body>
-
+  <div class="item">
+  <header id="header">
+    <img id="header-img" src="https://i.ytimg.com/vi/KHEUIHNwmbo/maxresdefault.jpg" alt="Header Image">
     <main id="main-doc">
-        <nav id="navbar">
-          <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-          <li><a class="nav-link" href="#What_you_should_know">What you should know</a></li>
-          <li><a class="nav-link" href="#History">History</a></li>
-          <li><a class="nav-link" href="#Games_of_hoyoverse">Games of Hoyoverse</a></li>
+        <nav id="nav-bar">
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#What_you_should_know">What you should know</a>
+        <a class="nav-link" href="#History">History</a>
+        <a class="nav-link" href="#Games_of_hoyoverse">Games of Hoyoverse</a>
         </nav>
+        <video id="video" controls>
+          <source src="https://www.youtube.com/watch?v=TAlKhARUcoY" type="video/mp4">
+        </video>
         <section class="main-section" id="Introduction">
             <header>Introduction</header>
             <p class="Paragraph">Today, we are excited to announce the official launch of our all-new, forward-thinking brand, HoYoverse. 
@@ -48,13 +53,38 @@
             <header>Games of Hoyoverse</header>
             <p class="Paragraph">The Games made by Hoyoverse are:</p>
             <p class="Paragraph">Genshin Imacpt</p>
+            <div class="item">
+              <h2>Genshin Impact</h2>
+              <p>Genshin Impact is an open-world, action role-playing game that allows the player to control one of four interchangeable characters in a party. 
+                Switching between characters can be done quickly during combat, allowing the player to use several different combinations of skills and attacks.</p>
+            </div>
             <p>Honkai Impact 3rd</p>
+            <div class="item">
+              <h2>Honkai Impact 3rd</h2>
+              <p>Honkai Impact 3rd is a free-to-play 3D action role-playing game developed by miHoYo, published by miHoYo in mainland China and worldwide by Cognosphere, d/b/a HoYoverse. 
+                It is the spiritual successor to Houkai Gakuen 2, using many characters from the previous title in a separate story. 
+                The game is notable for incorporating a variety of genres, from hack and slash and social simulation, to elements of bullet hell, platforming, shoot 'em up and dungeon crawling across multiple single and multiplayer modes. 
+                It features gacha mechanics.
+              </p>
             <p>Honkai:Star Rail</p>
+            < class="item">
+              <h2>Honaki Star Rail</h2>
+              <p>Honkai: Star Rail is a new HoYoverse space fantasy RPG. 
+                Hop aboard the Astral Express and experience the galaxy's infinite wonders filled with adventure and thrills. 
+                Players will meet new companions across various worlds and maybe even run into some familiar faces.
+              </p>
             <p>Tears Of Themis</p>
             <p>Zenless Zone Zero</p>
             <p>Houkai Gakuen</p>
             <p>Gun Girl Z</p>
-        </section>
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              <input type="submit" id="submit" value="submit">
+            </form>
+          </div>
+          
+        </header>
+      </section>
     </main>
 </body>
 </html>
